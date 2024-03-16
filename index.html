@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Ramadhan</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class = "container">
+    <h1>Special Ramadhan Offer</h1>
+    <div class = "Notes">
+      <div class = "Notes1">
+        <p class = "judul">AYAM BAKAR</p><br>
+        <div class = "image-center">
+          <img src="https://img.kurio.network/mIAqWOXcZMFdFh5hqRODW3yEFWk=/1200x900/filters:quality(80)/https://kurio-img.kurioapps.com/22/02/06/10d46313-c9bd-46f8-86a6-a098570a36a0.jpe" alt="">
+        </div>
+  
+        <br>
+        <div class = "menu">Paket Berisi : 
+          <ul>
+            <li>Ayam Bakar</li>
+            <li>Nasi Putih</li>
+            <li>Lalapan</li>
+          </ul> <br>
+        </div>
+        <button style = "cursor: pointer;" onclick="habis()" >Pesan Sekarang</button>
+      </div>
+
+      <div class = "Notes1">
+        <p class = "judul">SATE AYAM</p> <br>
+        <div class = "image-center">
+          <img src="https://sumeks.disway.id/upload/28de07a250e68931bceb246725c53a80.jpg" alt="">
+        </div>
+  
+        <br>
+        <div class = "menu">Paket Berisi : 
+          <ul>
+            <li>10 Tusuk Sate Ayam</li>
+            <li>Nasi Putih</li>
+            <li>Sambal</li>
+          </ul> <br>
+        </div>
+        <button style = "cursor: pointer;" onclick="order()" >Pesan Sekarang</button>
+      </div>
+
+      <div class = "Notes1">
+        <p class = "judul">NASI GORENG</p> <br>
+        <div class = "image-center">
+          <img src="https://www.masakapahariini.com/wp-content/uploads/2018/08/nasi_goreng_kecap_pedas_MAHI-1.jpg" alt="">
+        </div>
+  
+        <br><br><br>
+        <div class = "menu">Paket Berisi : 
+          <ul>
+            <li>Nasi Goreng</li>
+            <li>Kerupuk</li>
+            <li>Acar</li>
+          </ul> <br>
+        </div>
+        <button style = "cursor: pointer;" onclick="besok()" >Pesan Sekarang</button>
+      </div>
+
+      <div class = "Notes1">
+        <p class = "judul">SOP IGA</p> <br>
+        <div class = "image-center">
+          <img src="https://asset.kompas.com/crops/0nG47QJC7V0bcn6J1NVSguA4PTg=/0x6:800x539/750x500/data/photo/2020/07/27/5f1e343b4d8b7.jpg" alt="">
+        </div>
+  
+        <br><br>
+        <div class = "menu">Paket Berisi : 
+          <ul>
+            <li>Sop Iga</li>
+            <li>Nasi Putih</li>
+            <li>Sambal</li>
+          </ul> <br>
+        </div>
+        <button style = "cursor: pointer;" onclick="stock()" >Pesan Sekarang</button>
+      </div>
+
+    </div>
+    <p class="waktu">Waktu Hari Ini</p>
+    <p class="waktu" id = "waktu"></p>
+  </div>
+
+  <script>
+    function currentTime() {
+      let tanggal = new Date();
+      document.getElementById("waktu").innerHTML = tanggal;
+      setTimeout(currentTime, 1000);
+    }
+    currentTime();
+    </script>
+
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
